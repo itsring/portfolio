@@ -30,10 +30,14 @@ header,
 .content__title {
   width: 70px;
 }*/
-a:link {
+a {
+  text-decoration: none;
+  color: black;
+}
+/* a:link {
   color: brown;
   text-decoration: none;
-}
+} */
 a:visited {
   color: black;
   text-decoration: none;
