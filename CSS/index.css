@@ -45,6 +45,9 @@ a:visited {
 a:hover {
   color: burlywood;
 }
+.detail {
+  display: none;
+}
 
 /* h1 {
   font-size: 32px;

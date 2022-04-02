@@ -16,11 +16,12 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+   
     <link rel="stylesheet" href="CSS/index.css" />
     <title>박성준 포트폴리오</title>
   </head>
   <body>
-    <div class="container border border-dark">
+    <div class="container border border-dark mt-5">
       <div class="container mt-5">
         <header class="">
           <div class="row">
@@ -40,7 +41,7 @@
                     >깃허브 : https://github.com/itsring</a
                   >
                 </li>
-                <li><strong>Email :</strong> ki6123@namver.com</li>
+                <li><strong>Email :</strong> ki6123@naver.com</li>
               </ul>
             </div>
           </div>
@@ -57,10 +58,7 @@
                 <h5>생년월일</h5>
                 <h6>1997.05.06</h6>
               </div>
-              <div>
-                <h5>이메일</h5>
-                <h6>ki6123@naver.com</h6>
-              </div>
+
               <div>
                 <h5>깃 허브</h5>
                 <h6>
@@ -71,9 +69,12 @@
               </div>
             </div>
             <div class="row mt-5 mb-3">
-              <div class="col-4"><h3>포트폴리오</h3></div>
+              <div class="col-4">
+                <h3>포트폴리오</h3>
+                <button type="button" class="btn btn-sm btn-dark" id="btn-detail" onclick="displayToggle()">자세히보기</button>
+              </div>
               <div class="col-8">
-                <ul>
+                <ol>
                   <li>
                     <a
                       href="http://ec2-3-34-44-13.ap-northeast-2.compute.amazonaws.com:8080/teamTwo/main"
@@ -107,8 +108,124 @@
                       >랜덤 넘버 게임</a
                     >
                   </li>
+                </ol>
+              </div>
+            </div>
+            <div class="detail">
+            <div class="row mt-2 mb-3 ">
+              <div class="col-4">
+                <a
+                  href="http://ec2-3-34-44-13.ap-northeast-2.compute.amazonaws.com:8080/teamTwo/main"
+                >
+                  <h4>1. 아스날 펜페이지</h4></a
+                >
+              </div>
+              <div class="col-8">
+                <ul>
+                  <li>spring boot</li>
+                  <li>HTML 템플릿 : ThymeLeaf</li>
+                  <li>부트스트랩, css 사용</li>
+                  <li>jquery, JavaScript 사용</li>
+                  <li>
+                    @Controller, @Service, @Mapper 어노테이션 사용,
+                    ServiceImpl(service 인터페이스 상속), Model(DB쿼리문 실행
+                    인터페이스), sql.xml(sql 쿼리문) 사용
+                  </li>
+                  <li>
+                    네이버 뉴스 검색 api 사용 (검색어 : 아스날 | 인코딩 : UTF-8)<br>
+                    (구현 방법) - File 라이브러리로 받아온 데이터를 xml 파일로 저장하고 xml파일을 unmashall로 읽은 후 각각의 부모 dto에 저장해서 item을 뽑았음
+                  </li>
+                  <li>회원가입 시 아이디 중복확인 ajax 사용</li>
+                  <li>회원가입 시 회원 주소 다음 우편번호 api 사용</li>
+                  <li>
+                    REST 사용 <br />url을 받아서 명시하고<br />
+                    1. 템플릿을 열거나(modelAndView)<br />
+                    2. 데이터를 줌(Ajax)<br />
+                    3. DB에 CRUD함(create read update delete))
+                  </li>
                 </ul>
               </div>
+            </div>
+            <div class="row mt-2 mb-3 ">
+              <div class="col-4">
+                <a
+                  href="http://ec2-3-34-44-13.ap-northeast-2.compute.amazonaws.com:8080/main/busan"
+                >
+                  <h4>2. 부산 여행 오소</h4></a
+                >
+              </div>
+              <div class="col-8">
+                <ul>
+                 
+                  <li>
+                    카카오 맵 api 사용 : 부산에 없는 (임의로 잡은 위치에)숙소 제작
+                  </li>
+                  <li>회원가입 시 아이디 중복확인 ajax 사용</li>
+                  <li>회원가입 시 회원 주소 다음 우편번호 api 사용</li>
+                  <li>spring boot</li>
+                  <li>HTML 템플릿 : ThymeLeaf</li>
+                  <li>부트스트랩, css 사용</li>
+                  <li>
+                    @Controller, @Service, @Mapper 어노테이션 사용,
+                    ServiceImpl(service 인터페이스 상속), Model(DB쿼리문 실행
+                    인터페이스), sql.xml(sql 쿼리문) 사용
+                  </li>
+                  <li>
+                    REST 사용 <br />url을 받아서 명시하고<br />
+                    1. 템플릿을 열거나(modelAndView)<br />
+                    2. 데이터를 줌(Ajax)<br />
+                    3. DB에 CRUD함(create read update delete))
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row mt-2 mb-3 ">
+              <div class="col-4">
+                <a
+                  href="https://itsring.github.io/kakao-clone-2021/"
+                >
+                  <h5>3. 카카오톡 클론 코딩</h4></a
+                >
+              </div>
+              <div class="col-8">
+                <ul>
+                 <li>HTML, CSS만 사용한 페이지</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row mt-2 mb-3 ">
+              <div class="col-4">
+                <a
+                  href="https://itsring.github.io/momentom/"
+                >
+                  <h5>4. To do list</h4></a
+                >
+              </div>
+              <div class="col-8">
+                <ul>
+                 <li>HTML, CSS, JavaScript만 사용한 페이지</li>
+                 <li>openweather api를 사용하여 날씨를 받아옴</li>
+                 <li>JavaScript의 math함수를 이용해서 랜덤으로 배경화면과 명언이 바뀜</li>
+                 <li>date를 이용하여 현재 시각 구현</li>
+                 <li>1. localStorage를 이용하여 입력한 곳에 적은 내용을 저장하고 삭제함<br/> 2. appendChild를 이용하여 테그 추가<br/>3. .remove()를 사용하여 태그 삭제</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row mt-2 mb-3 ">
+              <div class="col-4">
+                <a
+                  href="https://itsring.github.io/Random-Number-Game/"
+                >
+                  <h5>5. 랜덤 넘버 게임</h4></a
+                >
+              </div>
+              <div class="col-8">
+                <ul>
+                 <li>첫 번째 입력란에 숫자를 입력 하면 0부터 입력한 숫자까지 랜덤하게 숫자를 뽑는다.<br/>
+                 두 번째 입력란에 숫자를 입력한 것과 랜덤으로 뽑은 숫자가 같으면 이기는 게임</li>
+                </ul>
+              </div>
+            </div>
             </div>
             <hr />
             <div class="">
@@ -162,6 +279,7 @@
                   <li>python - 웹 크롤링</li>
                   <li>c++ - 기초 교육 수강</li>
                   <li>React - 기능,ui 없는 앱</li>
+                  <li>안드로이드 스튜디오 기초 교육 수강 (android_studio를 이용한 안드로이드 프로그래밍 6판)</li>
                 </ul>
               </div>
             </div>
@@ -273,5 +391,6 @@
         </footer>
       </div>
     </div>
+    <script src="JS/showDetail.js"></script>
   </body>
 </html>
